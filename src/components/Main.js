@@ -25,7 +25,7 @@ const Main = () => {
             <header>
                 <img src={hero} />
                 <div>
-                    <h1>We build &amp; design <br/> web applications.</h1>
+                    <h1>Do you want has courses <br/> web applications.</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus congue dignissim. Vestibulum et ex nisl. Vestibulum eu luctus nisi. Fusce sit amet vehicula nisl. </p>
                     <Link to="/contact">Get in touch</Link>
                 </div>
