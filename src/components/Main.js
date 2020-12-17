@@ -25,9 +25,10 @@ const Main = () => {
             <header>
                 <img src={hero} />
                 <div>
-                    <h1>Do you want has courses <br/> web applications.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus congue dignissim. Vestibulum et ex nisl. Vestibulum eu luctus nisi. Fusce sit amet vehicula nisl. </p>
-                    <Link to="/contact">Get in touch</Link>
+                    <h1>Aprenda inglês online <br/> 100% digital.</h1>
+                    <p>Aqui você irá encontrar as <b>poucas vagas para você</b> que <b>não conseguiu entrar</b> para a English School nos dias anteriores.</p>
+                    <p>Com a English School, você é independente para desenvolver seu inglês onde quiser e na hora que puder.</p>
+                    <Link to="/contact">Quero me inscrever já</Link>
                 </div>
           
             </header>
