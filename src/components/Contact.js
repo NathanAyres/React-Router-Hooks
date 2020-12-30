@@ -9,7 +9,7 @@ const Contact = () => {
     }
 
     const [title, setTitle] = useState("");
-    const [content, setContent] = useState("");
+    const [content] = useState("");
     const [contactEmail, setContactEmail] = useState(""); 
 
     const sendEmail = async(e) =>{
@@ -27,21 +27,18 @@ const Contact = () => {
 
     return(
         <React.Fragment>
-           <button className="back" onClick={goBack}> &larr; Go Back</button>
+           <button className="back" onClick={goBack}> &larr; Voltar</button>
 
             <form className="contact" onSubmit={sendEmail}>
-                <h2>Send me a message so we can start a new project</h2>
+                <h2>preencha seus dados para iniciarmos o cadastro</h2>
                 
-                <label htmlFor="title">Message Title: </label>
+                <label htmlFor="title">Nome completo: </label>
                 <input type="text" name="title" onChange={(e) => setTitle(e.target.value)} />
-                
-                <label htmlFor="content">Message Content: </label>
-                <textarea name="content"  onChange={(e) => setContent(e.target.value)}  ></textarea>
             
-                <label htmlFor="email">Contact Email: </label>
+                <label htmlFor="email">Email: </label>
                 <input type="email" name="email" onChange={(e) => setContactEmail(e.target.value)} />
 
-                <input type="submit" value="Send Message" />
+                <input type="submit" value="Enviar" />
             </form>
 
         </React.Fragment>

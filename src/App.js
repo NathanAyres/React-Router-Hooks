@@ -15,22 +15,20 @@ function App() {
   });
 
 
-  const checkPath = () => {
-    history.listen((location) => {
-      setPath(location.pathname);
-    });
-  }
-
-
   useEffect(() => {
-    checkPath();
-  }, []);
+    const checkPath = () => {
+      history.listen((location) => {
+        setPath(location.pathname);
+      });
+    }
+      checkPath();
+    }, [history]);
 
 
   const showContact = path;
   let _contact;
   if(showContact !== "/contact"){
-    _contact = (<li><Link to="/contact">Contact Me</Link></li>)
+    _contact = (<li><Link to="/contact">Inscrever-se</Link></li>)
   }
 
 
@@ -39,7 +37,7 @@ function App() {
      <div className="container">
         <nav>
           <ul>
-            <li><Link to="/"> NewReactRouter </Link></li>
+            <li><Link to="/"> English School </Link></li>
           </ul>
           <ul>
             {_contact}
